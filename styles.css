@@ -1,0 +1,107 @@
+/* Base Styles for Light Mode */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e1e1e1;
+  }
+  
+  body.dark-mode .container {
+    background-color: #1e1e1e;
+  }
+  
+  body.dark-mode button {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  body.dark-mode h1 {
+    color: #e1e1e1;
+  }
+  
+  /* Dark Mode Task Table */
+  body.dark-mode table {
+    background-color: #333;
+    color: #e1e1e1;
+  }
+  
+  body.dark-mode input,
+  body.dark-mode select,
+  body.dark-mode textarea {
+    background-color: #444;
+    color: #e1e1e1;
+    border: 1px solid #555;
+  }
+  
+  /* Completed Task Styling */
+  .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Input & Select Elements */
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+  }
+  
+  /* Task Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
