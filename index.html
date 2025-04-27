@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="theme-toggle">Switch to Dark Mode</button>
+        <h1>Task Manager</h1>
+
+        <!-- Task Form -->
+        <input type="text" id="task-title" placeholder="Task Title" />
+        <textarea id="task-description" placeholder="Task Description"></textarea>
+        <input type="date" id="task-date" />
+        <select id="task-category">
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Urgent">Urgent</option>
+        </select>
+        <select id="task-priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <button id="add-task">Add Task</button>
+
+        <!-- Search Bar -->
+        <input type="text" id="search-bar" placeholder="Search tasks..." />
+
+        <!-- Sort Buttons -->
+        <button id="sort-due-date">Sort by Due Date</button>
+        <button id="sort-priority">Sort by Priority</button>
+
+        <!-- Task Table -->
+        <table id="tasks">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Due Date</th>
+                    <th>Category</th>
+                    <th>Priority</th>
+                    <th>Complete</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic tasks will be added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
